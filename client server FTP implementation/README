@@ -1,6 +1,6 @@
-##NETWORK PROGRAMM  HW2
+## NETWORK PROGRAMM  HW2
 
-#Simple FTP implementation
+# Simple FTP implementation
 
 Before executing.
 1.In the directory , use "make" command , complie the "server.c" and "client.c" file.
@@ -14,7 +14,7 @@ Execute..
 	III. input "exit" ,exit the process.
 
 
-#Create File:
+# Create File:
 	filename.encode : the compressed file
 	file.table : the huffman code imformation
 
@@ -30,5 +30,5 @@ Execute..
 
 
 
-#PS:
+# PS:
 	server & client 兩個檔案需要放在不同目錄下執行,否則 server decode檔案後 , 名稱會和 原始檔衝突 
