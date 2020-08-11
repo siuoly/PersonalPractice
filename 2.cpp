@@ -1,12 +1,13 @@
 #include<iostream>
+#include<stdlib.h>
 using namespace std;
 
 int main(){
 	//input string
-	char str[100];
-	cin >> str;
+	string str;	
+	getline(cin,str);	
 	//each char - 7 output string
-	for(int i=0 ; i< 100;i++)
+	for(int i=0 ; i< str.size();i++)
 	{	
 		if(str[i]!=0)
 			str[i]-=7;
