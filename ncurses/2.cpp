@@ -6,13 +6,13 @@
 using namespace std;
 int main()
 {
-	initsrc();
+	initscr();
 	
 	// has color?
-	if(has_color()== false)
+	if(has_colors()== false)
 	{
 		endwin();
-		cout << "螢幕不支援顏色\n";
+		printw("螢幕不支援顏色");
 		exit(1);
 	}
 	// statr color
@@ -20,7 +20,11 @@ int main()
 
 	init_pair(1 , COLOR_RED , COLOR_BLUE);
 
-	attron()
-	// close
+	attron(COLOR_PAIR(1));
+	printw("this is my color");
+	
+	getch();
 
+	// close
+	endwin();
 }

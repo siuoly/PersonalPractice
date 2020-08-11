@@ -9,5 +9,9 @@ int main(){
 	printw("%d %d \n",y,x);
 	refresh();
 	getch();
+	erase();
+	clearok(stdscr , TRUE);
+	refresh();
+	getch();
 	endwin();
 }

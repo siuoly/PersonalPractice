@@ -1,0 +1,34 @@
+初始化:
+	WINDOW* initscr();
+	int endwin(); 			-->OK/ERR
+
+輸出:
+	int addch(const chtype ch);
+	int addchstr(chtype *const  str);
+	int printw(char* format);
+	int box(WINDOW *win, chtype vc ,chtype hc);
+
+	int insch(chtype ch); 插入字元,後推字元
+	int insertln();				插入空白行
+	int delch();					刪除同上
+	int deleteln();				同上
+	int beep();						效果音
+	int flash();					閃動螢幕
+
+輸入
+	chtype inch();									回傳游標目前字元(chtype)
+	int instr(char *st);						寫入字元陣列
+	int innstr(char *str, int num);	同上
+
+刷新
+	int erase();		清空螢幕()
+	int clear();		清空 額外呼叫clearok()重顯
+	int clearok();	清空螢幕 下一個refresh重繪
+	int clrtobot();	游標至螢幕尾端清空
+	int clrtoeol();	游標至行尾清空
+
+移動
+	int move(int y, int x)
+	int leaveok(WINDOW *win , bool leav_flag) 游標是否放在與邏輯游標同位置 true則亂數擺放
+
+

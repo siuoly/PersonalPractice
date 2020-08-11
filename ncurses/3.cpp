@@ -60,12 +60,13 @@ void timeAxis(int numOfTime){
 	
 	//在螢幕第三行 畫線 由左至右
 	move(2,0);
-	hline('O', --x );
+	printw("%d ", numOfTime);
+	hline('O', x-5 );  x-=5;
 	
-	//刷新: 在舊線莫端 塗白 
+	//刷新: 在舊線末端 塗白 
 	while(numOfTime > 0)
 		tfresh(numOfTime ,2 ,--x);
-
+	
 	mvaddstr(4,0,"end");
 	refresh();
 	getch();

@@ -1,0 +1,26 @@
+ncurses使用外部函式庫:
+captoinfo		:termcap轉換工具			clear	:清除螢幕
+infocmp			:terminfo反編譯				tabs	:在terminal設定tabs
+tic					:terminal編譯					toe		:列出terminfo項目
+tput				:檢索terminfo功能			tset	:初始化terminal
+
+
+多數reutines有多個版本:prefix p(pad args)		,  prefix w(window args)   ,  prefix mv(xy coordinate args)
+
+
+Routine return integer  1)ERR:執行失敗  2)其他整數:執行成功
+Micro 返還不確定整數
+
+
+win: window affected  		pad: pad affected   <---both struct is pointer to WINDOW
+
+WINDOW , SCREEN , bool , chtype , : <curses.h> defined
+TERMINAL : <term.h> defined
+
+
+
+EXTENDED XSI Curse call 的 wade charactor 尚未實作
+<curses.h>自動包含 <stdio.h> , <unctrl.h>
+
+
+

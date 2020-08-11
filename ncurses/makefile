@@ -1,4 +1,4 @@
-all: 1 3 
+all: 1 2 3 
 
 #compiler
 CC=g++
@@ -10,9 +10,9 @@ CFLAGS= -g -Wall -lncurses -std=c++11
 	g++ -g -o 1 1.cpp -lncurses
 
 2: 2.cpp
-	${CC}  ${CFLAGS} -o 2 2.cpp 
+	${CC} ${CFLAGS} -o 2 2.cpp 
 
 3: 3.cpp
-	${CC} ${CFLAGS}  -o 3 3.cpp 
+	${CC} ${CFLAGS} -o 3 3.cpp 
 
 compile:      
