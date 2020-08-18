@@ -15,4 +15,4 @@ CFLAGS= -g -Wall -lncurses -std=c++11
 3: 3.cpp
 	${CC} ${CFLAGS} -o 3 3.cpp 
 
-compile:      
+compile:
