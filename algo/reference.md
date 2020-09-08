@@ -4,7 +4,7 @@
 
 <a name="sorts"/>
 
-### `insortion sort`
+### `insertion sort`
 ```c++
 	int a[100];int n=0;
 
