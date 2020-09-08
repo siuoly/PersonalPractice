@@ -42,16 +42,12 @@ int main(){
 * *開頭
 / /開頭
 
+[十分鐘快速掌握](https://wcc723.github.io/development/2019/11/23/ten-mins-learn-markdown/)
 [顯示文字] (連結地址)
 
-[十分鐘快速掌握](https://wcc723.github.io/development/2019/11/23/ten-mins-learn-markdown/)
-
-! [圖片貼上] (Image/fig1.png)
-
-![圖片](Image/1.png)
+![圖片](Image/1.png) ! [圖片貼上] (Image/fig1.png)
 
 [Headers](#headers)
-
 [Headers] (#headers)
 
 
