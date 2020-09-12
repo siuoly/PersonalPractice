@@ -22,7 +22,9 @@
 		a[j+1]=tmp; 
 	}
 ```
+
 <a name="algorithms"/>
+
 #### Matrix_Chain
 
  `s[i,j]` =  min{ s[i,i+k] + s[k+1, j] + v[i-1]*v[k]*v[j] &ensp;&ensp;&ensp;&ensp;&ensp; if i<j	&ensp;and   **i <= k < j**
