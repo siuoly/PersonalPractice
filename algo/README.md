@@ -34,6 +34,8 @@
       
 
 ```c++
+typedef vector< vector<int>> vv;
+typedef vector< int> v;
 void Matrix_Chain( v& p , vv& s , vv& c){		// s,c : empty ; s:matrix ; c:multi order
 	int n = p.size();
 	
