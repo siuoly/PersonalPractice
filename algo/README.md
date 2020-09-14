@@ -24,6 +24,54 @@
 	}
 ```
 
+#### quick sort
+```c++
+typedef vector<int> v;
+
+// return quicksort
+void quicksort( v &ary ,int left, int right)
+{
+	if(left >= right ) return;
+	int i = left , j = right+1 ;
+
+
+	do
+	{
+		do{ i=i+1;	}while( ary[i] < ary[left]	);
+		do{ j=j-1;	}while( ary[j] > ary[left]	);
+		if( i < j)
+			swap( ary[i] , ary[j]) ;
+	}while( i < j);
+
+	if( i > j )	 swap( ary[left] , ary[j]);
+  #ifdef TEST
+	cout << "swap: " << left << " ~ " << right 
+			 << "\tkey: " << ary[j] << endl ;
+	for(auto a: ary)
+		cout << a<<' '; cout << endl;
+  #endif
+
+	quicksort( ary , left , j-1 );
+	quicksort( ary , j+1 , right );
+}
+```
+### output
+	case1:
+	swap: 0 ~ 9     key: 23
+	2 1 12 23 43 545 65 23 32 43
+	swap: 0 ~ 2     key: 2
+	1 2 12 23 43 545 65 23 32 43
+	swap: 4 ~ 9     key: 43
+	1 2 12 23 23 43 32 43 65 545
+	swap: 4 ~ 6     key: 23
+	1 2 12 23 23 43 32 43 65 545
+	swap: 5 ~ 6     key: 43
+	1 2 12 23 23 32 43 43 65 545
+	swap: 8 ~ 9     key: 65
+	1 2 12 23 23 32 43 43 65 545
+[quicksort.cpp](./quicksort.cpp)
+
+
 <a name="algorithms"/>
 
 #### Matrix_Chain
