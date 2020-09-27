@@ -1,3 +1,18 @@
+#==========quickly reference============
+
+print(20//6)
+print(1.25 % 0.5)
+print( 'Brian\'s mother:He\'s a very naughty boy')
+print(""" this is
+Text""")
+print( int("2"+"2") + 10)
+foo=10   // del foo
+x = input("please input somthing")
+print( 'His age is ' + str(age) )
+x*=2   #'louis louis '
+
+#=======================================
+
 # Division
 print(11/0) #error
 print( ( 17+94) / (-5+5))
@@ -47,4 +62,53 @@ print( "5" + 6 )  #error
 # String Operation
 print( "spam" * 3 )
 print(4*'2')
+
+# Variable
+usr='James'
+usr=100
+# Variable name: 
+# letter numbers underscores
+this_is_normal_name = 7
+123abc = 7 # error can't begin with num
+
+# Variable delete
+foo = 3
+del foo
+print(foo) #error
+
+
+# Input
+x = input() # get string
+x = input("please input somthing")
+print(x)
+
+name = input("what is your name? ")
+
+# Conversion
+age = int( input() )
+print( age )
+
+age = 43
+print( 'His age is ' + str(age) )
+
+print( float( 123) ) #123.0
+
+name = input()
+age = input()
+print( name + 'is' + age)
+
+# In-place operator
+x = 2
+x += 3  #5
+x = 'louis '
+x*=2   #'louis louis '
+
+
+#==========quickly reference============
+
+
+
+
+
+
 
