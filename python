@@ -1,0 +1,50 @@
+# Division
+print(11/0) #error
+print( ( 17+94) / (-5+5))
+
+# Float
+print( 3/4 )
+print( 1/1)
+print( 8/2 )
+print( 6/7.0 )
+
+# Other Number Opetration
+print ( 2** 5)
+print ( 9**(1/2) )
+print ( 2**1000)
+print ( 2**3**4) # (2**(3**4))
+
+# Quotient
+print(20//6)
+print( 20.5 // 4.5 ) # output 4.0
+
+# Remainder
+print(20 % 6)
+print(1.25 % 0.5)
+
+# String : using quotation
+print("Python is fun")
+print('I am louis')
+print( 'apple' + " with " + "banana" )
+
+# Backslash
+print( 'Brian\'s mother:He\'s a very naughty boy')
+print( "\"")    #   print(")
+
+# New Line
+print( ' One \n Two \n Three ')
+print(""" this is
+a
+new
+Line
+Text""")
+
+# Concatenation
+print( "2" + "2" )
+print( int("2"+"2") + 10)
+print( "5" + 6 )  #error
+
+# String Operation
+print( "spam" * 3 )
+print(4*'2')
+
