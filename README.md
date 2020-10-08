@@ -1,10 +1,12 @@
 # readME 撰寫格式
 
-makefile 參考
+### makefile 參考
 + [GNU make](https://www.gnu.org/software/make/)
 + [中譯手冊餘鳳昌](https://myweb.ntut.edu.tw/~yccheng/oop2005f/GNUMakeManual.pdf) 
 + [GNU make中文手册](http://free-online-ebooks.appspot.com/tools/gnu-make-cn/)
 + [GNU make中文手册pdf](https://hacker-yhj.github.io/resources/gun_make.pdf)
+
+---
 
 [快速介紹](https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e#alt-h1) && 
 [GFM editor](https://jbt.github.io/markdown-editor/) && 
