@@ -1,4 +1,7 @@
-"vim zh document https://chienweichih.github.io/vimcdoc/doc/help.html
+"vim doc         http://vimcdoc.sourceforge.net/
+"vim zh-tw       https://chienweichih.github.io/vimcdoc/doc/help.html
+"vim zh-ch       https://yianwillis.github.io/vimcdoc/doc/help.html
+"vim_faq         https://yianwillis.github.io/vimcfaq/doc/vim_faq.html
 "noh : cancel highlight search
 set nu
 syntax on
