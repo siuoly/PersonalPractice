@@ -111,4 +111,57 @@ x*=2   #'louis louis '
 
 
 
+#=======================================
+
+# Boolean
+foo = True # or False
+qoo = False
+foo == qoo
+1+1 == 2 # True
+"123" == '123' #True
+
+1 != 2 #True
+7 > 5		#True
+3 >=3
+
+'abc' > 'abb'  #True
+'abc0' > 'abd' #True
+'abc' < 'abcd'
+
+# if statement
+if 10 > 5:
+	print("10 greater than 5")
+
+print("Program ended")
+
+# if can be nested
+if 1+1 == 2:
+	print('oe plus one is euqal two')
+	if( 2*2 == 8)
+		print ("two multify two is equal eight')
+	else:
+		print("two multify two is equal eight')
+
+# elif useage
+num = 3
+if num == 1:
+  print("One")
+elif num == 2:
+  print("Two")
+elif num == 3: 
+  print("Three")
+else: 
+  print("Something else")
+
+
+# Boolean logic
+# and or not
+not 1==2
+True and False #False
+True or False	#True
+
+# Operator Precedence
+False == False or True	#True
+
+
 
