@@ -1,5 +1,3 @@
-# Readme.md 撰寫格式
-
 ### makefile 參考
 + [GNU make](https://www.gnu.org/software/make/)
 + [中譯手冊餘鳳昌](https://myweb.ntut.edu.tw/~yccheng/oop2005f/GNUMakeManual.pdf) 
@@ -7,6 +5,13 @@
 + [GNU make中文手册pdf](https://hacker-yhj.github.io/resources/gun_make.pdf)
 
 ---
+### cmake 參考
++ [Cmake實踐 .pdf](http://file.ncnynl.com/ros/CMake%20Practice.pdf)
++ [CmakeCookBook](https://chenxiaowei.gitbook.io/cmake-cookbook/preface-chinese)
++ [cmake Example](https://github.com/ttroy50/cmake-examples#introduction)
++ [cmake video](https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)
+---
+### Readme.md 撰寫格式
 
 [快速介紹](https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e#alt-h1) && 
 [GFM editor](https://jbt.github.io/markdown-editor/) && 
