@@ -1,4 +1,4 @@
-# readME 撰寫格式
+# Readme.md 撰寫格式
 
 ### makefile 參考
 + [GNU make](https://www.gnu.org/software/make/)
