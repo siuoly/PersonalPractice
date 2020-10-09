@@ -1,6 +1,6 @@
 ### makefile 參考
 + [GNU make](https://www.gnu.org/software/make/)
-+ [中譯手冊餘鳳昌](https://myweb.ntut.edu.tw/~yccheng/oop2005f/GNUMakeManual.pdf) 
++ [中譯手冊 譯:於鳳昌](https://myweb.ntut.edu.tw/~yccheng/oop2005f/GNUMakeManual.pdf) 
 + [GNU make中文手册](http://free-online-ebooks.appspot.com/tools/gnu-make-cn/)
 + [GNU make中文手册pdf](https://hacker-yhj.github.io/resources/gun_make.pdf)
 
