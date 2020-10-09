@@ -6,7 +6,7 @@ int main(){
 	int x,y;
 	initscr();
 	getmaxyx(stdscr ,y,x);
-	printw("%d %d \n",y,x);
+	printw("y:%d x:%d \n",y,x);
 	refresh();
 	getch();
 	erase();
