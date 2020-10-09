@@ -1,0 +1,56 @@
+======= git region name=======================
+
+1 WD: work directory , in local machine
+
+2 Index area: intermediate between WD and Repo
+ =Staging area
+
+3 Repository: the region for "commited version",
+	      WD --> Index area --> Repository
+
+========= File 4 status ==========================
+
+1 untracked 			: not be monitor by git
+2 change to be commit		: after "git add" , it put in staging area.
+3 change not staged for commit	: add to git , change again. it will be put back to WD
+4 committed			: it have put in repo
+
+========== basic command =====================================
+
+git init : initial this directory as git usage
+
+git add <file, fir> :
+
+git commit <file> -m "xxx":  add "file" and commit it.
+
+========== restore =======================================
+
+git reset	: remove from stage region ( git add file , then git reset, ) no change the file in WD.
+git rm --cached <filename>:  as same as "git reset"
+
+git log && git reset --hard <xxx>:  look at commit version(f56xxxx...) , and reback to the
+				    old version in repository.
+
+git checkout feature:  set current dir to be another "branch" data.
+
+========== branch ========================================
+git branch			: look at branchs in this repo.
+git branch <branch name>	: create a new branch named "xxx"
+git checkout <branch name>	: switch to indicate branch.     it can indicated the [SHA1 value] position searched in "git reflog"
+git checkout -b <name>		: create a new branch named "name" , and switch to it.
+git branch -d <name>		: remove indicated branch "name"
+git branch -D <name>		: as same as above , forced .
+git reflog			: onelinely show all logs.
+
+
+
+
+
+======== technique =======================================
+grapg log:  add blow in ~/.gitconfig
+
+[alias]
+lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+lg = !"git lg1"
+
