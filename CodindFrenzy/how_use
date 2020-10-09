@@ -1,0 +1,73 @@
+OBJ=1.o 2.o 3.o 4.o 5.o
+EXE=${OBJ:.o=}      #生成對應 1 2 3 4 5
+SRC=${OBJ:.o=.cpp}	#生成對應 1.cpp 2.cpp .....
+										#Ref: 
+.PHONY: all clear
+
+編譯 目錄中所有檔案 
+=======================
+通用法:
+SRC=$(wildcard *.cpp)
+		# 當前目錄下 所有的*.cpp 檔案
+		# 不可用 SRC=*.c , 變數命名*.c視為字串
+
+EXE=$(patsubst %.cpp,% ,$(wildcard *.cpp))
+		# 取代指定通用字串 
+		# 在此 .cpp 被 % 取代
+
+all: $(EXE)	
+		# implict rule 執行
+
+Ref:4.4.3 The Function wildcard
+
+==================
+
+法一
+all: ${EXE}
+
+隱含規則自動編譯 g++  
+Ex: g++ 1.cpp -o 1 
+Ref: 10.5.3 automatic Variable
+
+====================
+法二
+.SUFFIXES:		#關閉隱含規則(Implicit rule)
+
+all: ${EXE}
+
+%: %.cpp
+	g++ -g -o $@ $<
+
+自訂Implict Rule 
+Ex: g++ -g -o $@ $<
+
+====================
+法三
+.SUFFIXES:		#關閉隱含規則(Implicit rule)
+
+all: ${EXE}
+
+%: %.o
+	g++ -g -o $@ @<
+
+%.o: %.cpp
+	g++ -g -c $< 
+
+執行完 將自動移除過程中產生的%.o檔案
+===================
+法四
+#在此,必需關閉隱含規則(Implicit rule)
+
+all: ${EXE}
+
+%: %.cpp
+	g++ -g -c $< 
+	g++ -g -o $@ $<
+
+指令放在同一個相依項目中
+
+
+==== clean ===============
+clean:
+	@rm -f *.o ${EXE}
+同 @{RM} *.o ${EXE}
