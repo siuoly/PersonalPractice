@@ -1,11 +1,12 @@
-OBJ=1.o 2.o 3.o 4.o 5.o
-EXE=${OBJ:.o=}
-SRC=${OBJ:.o=.cpp}
+SRC=$(wildcard *.cpp)
+OBJ:= $(SRC:.cpp=.o)
+EXE =$(patsubst %.cpp,%,$(wildcard *.cpp))
+
 
 .SUFFIXES:
 
 all: ${OBJ}
-
+	
 %.o: %.cpp
 	g++ -g -c $< 
 	g++ -g -o $* $@

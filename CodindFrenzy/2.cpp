@@ -1,1 +1,13 @@
-int main(){}
+#include <iostream>
+#include <type_traits>
+
+template <unsigned n>
+struct factorial : std::integral_constant<int,n * factorial<n-1>::value> {};
+
+template <>
+struct factorial<0> : std::integral_constant<int,1> {};
+
+int main() {
+  std::cout << std::integral_constant<int,10>::value;  // constexpr (no calculations on runtime)
+	return 0;
+}

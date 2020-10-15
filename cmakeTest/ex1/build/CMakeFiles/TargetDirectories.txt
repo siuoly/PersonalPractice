@@ -1,0 +1,3 @@
+/home/siuoly/test/cmakeTest/t1/build/CMakeFiles/rebuild_cache.dir
+/home/siuoly/test/cmakeTest/t1/build/CMakeFiles/edit_cache.dir
+/home/siuoly/test/cmakeTest/t1/build/CMakeFiles/app.dir
