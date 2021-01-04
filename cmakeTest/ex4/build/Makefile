@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/siuoly/PersonalPractice/cmakeTest/ex1
+CMAKE_SOURCE_DIR = /home/siuoly/PersonalPractice/cmakeTest/ex4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/siuoly/PersonalPractice/cmakeTest/ex1/build
+CMAKE_BINARY_DIR = /home/siuoly/PersonalPractice/cmakeTest/ex4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/siuoly/PersonalPractice/cmakeTest/ex1/build/CMakeFiles /home/siuoly/PersonalPractice/cmakeTest/ex1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/siuoly/PersonalPractice/cmakeTest/ex4/build/CMakeFiles /home/siuoly/PersonalPractice/cmakeTest/ex4/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/siuoly/PersonalPractice/cmakeTest/ex1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/siuoly/PersonalPractice/cmakeTest/ex4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named app
+# Target rules for targets named hello
 
 # Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 app
-.PHONY : app
+hello: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello
+.PHONY : hello
 
 # fast build rule for target.
-app/fast:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
+hello/fast:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
+.PHONY : hello/fast
 
-main.o: main.cc.o
+f1.o: f1.c.o
 
-.PHONY : main.o
+.PHONY : f1.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.o
-.PHONY : main.cc.o
+f1.c.o:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/f1.c.o
+.PHONY : f1.c.o
 
-main.i: main.cc.i
+f1.i: f1.c.i
 
-.PHONY : main.i
+.PHONY : f1.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.i
-.PHONY : main.cc.i
+f1.c.i:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/f1.c.i
+.PHONY : f1.c.i
 
-main.s: main.cc.s
+f1.s: f1.c.s
 
-.PHONY : main.s
+.PHONY : f1.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.s
-.PHONY : main.cc.s
+f1.c.s:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/f1.c.s
+.PHONY : f1.c.s
+
+hello.o: hello.c.o
+
+.PHONY : hello.o
+
+# target to build an object file
+hello.c.o:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.c.o
+.PHONY : hello.c.o
+
+hello.i: hello.c.i
+
+.PHONY : hello.i
+
+# target to preprocess a source file
+hello.c.i:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.c.i
+.PHONY : hello.c.i
+
+hello.s: hello.c.s
+
+.PHONY : hello.s
+
+# target to generate assembly for a file
+hello.c.s:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.c.s
+.PHONY : hello.c.s
 
 # Help Target
 help:
@@ -158,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... app"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... hello"
+	@echo "... f1.o"
+	@echo "... f1.i"
+	@echo "... f1.s"
+	@echo "... hello.o"
+	@echo "... hello.i"
+	@echo "... hello.s"
 .PHONY : help
 
 

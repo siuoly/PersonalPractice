@@ -1,0 +1,3 @@
+/home/siuoly/PersonalPractice/cmakeTest/ex4/build/CMakeFiles/rebuild_cache.dir
+/home/siuoly/PersonalPractice/cmakeTest/ex4/build/CMakeFiles/edit_cache.dir
+/home/siuoly/PersonalPractice/cmakeTest/ex4/build/CMakeFiles/hello.dir

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/siuoly/PersonalPractice/cmakeTest/ex4/f1.c
+stdio.h
+-
+
+/home/siuoly/PersonalPractice/cmakeTest/ex4/hello.c
+stdio.h
+-
+ncurses.h
+/home/siuoly/PersonalPractice/cmakeTest/ex4/ncurses.h
+

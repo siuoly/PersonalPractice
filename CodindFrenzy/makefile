@@ -10,6 +10,7 @@ all: ${OBJ}
 %.o: %.cpp
 	g++ -g -c $< 
 	g++ -g -o $* $@
+	./$*
 
 clean:
 	@rm -f *.o ${EXE}

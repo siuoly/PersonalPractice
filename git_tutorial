@@ -42,9 +42,15 @@ git branch -d <name>		: remove indicated branch "name"
 git branch -D <name>		: as same as above , forced .
 git reflog			: onelinely show all logs.
 
+========= merge =========================================
+git merge --no-ff <other_branch> 	: create merge with a command, can differ another branch
 
 
-
+========= alias ==========================================
+gcmsg = git commit =m
+gcsm = git commit -s -m
+gaa = git add -a
+gss = git status 
 
 ======== technique =======================================
 grapg log:  add blow in ~/.gitconfig

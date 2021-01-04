@@ -2,7 +2,7 @@
 using std::cout;
 
 
-void Int(int a=0, int b ,int c=2 ){
+void Int(int a, int b ,int c=2 ){
 	cout << 'a' << a <<'\n' ;
 	cout << 'b' << b <<'\n' ;
 	cout << 'c' << c <<'\n' ;

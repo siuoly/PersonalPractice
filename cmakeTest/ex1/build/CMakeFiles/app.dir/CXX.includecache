@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/siuoly/test/cmakeTest/t1/main.cc
+/home/siuoly/PersonalPractice/cmakeTest/ex1/main.cc
 iostream
 -
 
