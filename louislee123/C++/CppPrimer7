@@ -1,0 +1,19 @@
+class type 如同 built-in type 一樣自然
+
+include header <---- 一個header對應一個class
+
+建立Sale_item
+feature:
+	isbn() >>cin讀取 <<cout寫入  =指定 + +=
+
+example:------------
+Sales_item book;
+std::cin >> book ;
+std::cout << book;
+
+Sales item1 ,item2 ;
+std::cin >> item1 >> item2 ;
+std::cout << item1 + item2 << endl;
+---------------------
+
+建立Sale_data類別

@@ -1,0 +1,14 @@
+一般:
+header: template declaration & definition
+main.cc : include header, initiate when using the function
+
+但是:
+當main1.cc main2.cc main3.cc ...... 使用時, 可能重複initiate很多次
+想要要一個library implemetation,  實作所有template function
+
+使用:
+header: 同上
+lib.cc: template func();   template func2(int); .......
+main: extern template fnuc(); ......
+
+如此,main在使用func時,不會自動實例化,而linker會連結lib已經實例化的func

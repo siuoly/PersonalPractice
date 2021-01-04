@@ -1,0 +1,13 @@
+
+decltype and reference
+--------------------
+int i=42 , *p=&i ,&r=i ;
+decltype( r ) d ; //error d is a int&.
+decltype( r+0 ) b ;  // ok,b is a int.
+decltype( *p ) c ; // error , c is a point to int,
+											//      so c is a int& , need initialize
+decltype( (i) ) e; // errro , e is int&. (i) is a expression , so it is lvalue.
+decltype(i) f ; // ok, f is a int.
+-----------------------
+decltype((variable)) is always a reference.
+
