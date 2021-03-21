@@ -31,7 +31,7 @@ git rm --cached <filename>:  as same as "git reset"
 git log && git reset --hard <xxx>:  look at commit version(f56xxxx...) , and reback to the
 				    old version in repository.
 
-git checkout feature:  set current dir to be another "branch" data.
+git checkout <name>:  set current dir to be another "branch" data.
 
 ========== branch ========================================
 git branch			: look at branchs in this repo.
