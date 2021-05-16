@@ -1,0 +1,7 @@
+傳遞給 terminal 字元, 在背景執行 , 自動刷新 txt
+map <C-F> :call term_sendkeys(term_list()[0], cmd.expand('%').out )<CR>
+
+
+
+autocmd! BufReadPost a.txt
+autocmd BufReadPost a.txt setlocal autoread
