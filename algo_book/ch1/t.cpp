@@ -16,11 +16,7 @@ int main(){
 	int s=-1;
 	for(int i=1 ; i<33; i++)
 	{ s*=2; printf("%f\n" , s); }
-
-
 }
-
-
 /*
  
 	printf("%d\n", 8.0/5.0);
@@ -131,20 +127,4 @@ int main(){
 			cout <<"in\n";
 		else
 			cout <<"in f\n" ;
-
-*/
-
-/*
-
-*/
-/*
-
-*/
-/*
-
-*/
-/*
-
-*/
-
 
